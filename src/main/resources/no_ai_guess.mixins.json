@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "com.hexagram2021.no_ai_guess.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "no_ai_guess.refmap.json",
+  "mixins": [
+    "CrashReportExtenderMixin",
+    "CrashReportMixin"
+  ],
+  "minVersion": "0.8",
+  "client": [
+  ]
+}

@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[38,)"
+license="LGPL v2.1"
+issueTrackerURL="https://github.com/Viola-Siemens/No-AI-Guess/issues"
+
+[[mods]]
+modId="no_ai_guess"
+version="${file.jarVersion}"
+displayName="No AI Guess"
+logoFile="logo.png"
+credits="Liu Dongyu"
+authors="Liu Dongyu"
+description='''
+Injects a defensive prompt for LLM to output specify content to indicate to player to ask human beings rather than AI assistant.
+'''
+
+[[dependencies.no_ai_guess]]
+    modId="forge"
+    mandatory=true
+    versionRange="[38,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.no_ai_guess]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18,1.19)"
+    ordering="NONE"
+    side="BOTH"
