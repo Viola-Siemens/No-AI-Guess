@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[41,)"
+loaderVersion="[46,)"
 license="LGPL v2.1"
 issueTrackerURL="https://github.com/Viola-Siemens/No-AI-Guess/issues"
 
@@ -17,12 +17,12 @@ Injects a defensive prompt for LLM to output specify content to indicate to play
 [[dependencies.no_ai_guess]]
     modId="forge"
     mandatory=true
-    versionRange="[41,)"
+    versionRange="[46,48.0.32)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.no_ai_guess]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19,1.20)"
+    versionRange="[1.20,1.20.2]"
     ordering="NONE"
     side="BOTH"

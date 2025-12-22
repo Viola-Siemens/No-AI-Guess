@@ -20,15 +20,23 @@ apply plugin: 'org.spongepowered.mixin'
 
 version = project.mod_version
 group = 'com.hexagram2021.no_ai_guess'
+
+base {
+    archivesName = 'no_ai_guess'
+}
 archivesBaseName = 'no_ai_guess'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
 println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
 minecraft {
-    mappings channel: 'official', version: '1.19.4'
+    mappings channel: 'official', version: '1.20.4'
 
     accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
+
+    enableIdeaPrepareRuns = true
+    copyIdeResources = true
+    generateRunFolders = true
 
     runs {
         client {
@@ -129,7 +137,7 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.19.4-45.1.0'
+    minecraft 'net.minecraftforge:forge:1.20.1-47.2.0'
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
 
