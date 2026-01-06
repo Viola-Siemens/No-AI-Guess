@@ -2,7 +2,7 @@ package com.hexagram2021.no_ai_guess.mixin;
 
 import com.hexagram2021.no_ai_guess.NoAiGuess;
 import net.minecraft.CrashReport;
-import net.minecraftforge.logging.CrashReportExtender;
+import net.neoforged.neoforge.logging.CrashReportExtender;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;

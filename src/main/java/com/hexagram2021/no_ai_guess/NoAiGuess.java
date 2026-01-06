@@ -1,6 +1,6 @@
 package com.hexagram2021.no_ai_guess;
 
-import net.minecraftforge.fml.common.Mod;
+import net.neoforged.fml.common.Mod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
