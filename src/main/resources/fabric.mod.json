@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "${archives_base_name}",
+  "version": "${mod_version}",
+  "name": "${mod_name}",
+  "description": "${mod_description}",
+  "authors": [
+    "Liu Dongyu"
+  ],
+  "contact": {
+    "repo": "${repo_url}"
+  },
+  "license": "${license}",
+  "icon": "logo.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.hexagram2021.no_ai_guess.NoAiGuess"
+    ]
+  },
+  "mixins": [
+    "no_ai_guess.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "*",
+    "minecraft": ">=1.18 <=1.20.4"
+  }
+}

@@ -8,5 +8,8 @@
   ],
   "minVersion": "0.8",
   "client": [
-  ]
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
 }
