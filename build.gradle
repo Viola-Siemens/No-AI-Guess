@@ -37,17 +37,6 @@ dependencies {
     implementation 'com.google.code.findbugs:jsr305:3.0.2'
 }
 
-fabricApi {
-    configureTests {
-        createSourceSet = true
-        modId = "${project.archives_base_name}-gametest"
-        enableGameTests = true
-        enableClientGameTests = true
-        eula = true
-        clearRunDirectory = false
-    }
-}
-
 loom {
     // accessWidenerPath = file("src/main/resources/${project.archives_base_name}.accesswidener")
 
@@ -57,6 +46,17 @@ loom {
         }
         client {
             runDir "run/client"
+        }
+        testmodServer {
+            runDir "run/testServer"
+            server()
+            ideConfigGenerated project.rootProject == project
+            source sourceSets.main
+        }
+        autoTestServer {
+            runDir "run/testServer"
+            inherit testmodServer
+            vmArg "-Dfabric.autoTest"
         }
     }
 }
