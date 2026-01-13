@@ -40,7 +40,7 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       - name: Accept EULA
-        run: echo "eula=true" > ./run/testServer/eula.txt
+        run: mkdir -p ./run/testServer && echo "eula=true" > ./run/testServer/eula.txt
       - name: Run Game Test
         timeout-minutes: 5
         run: ./gradlew runAutoTestServer
