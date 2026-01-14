@@ -7,7 +7,7 @@
   "license": "LGPL v2.1",
   "entrypoints": {
     "server": [
-      "com.hexagram2021.no_ai_guess.NoAiGuessTest"
+      "com.hexagram2021.no_ai_guess_test.NoAiGuessTest"
     ]
   }
 }

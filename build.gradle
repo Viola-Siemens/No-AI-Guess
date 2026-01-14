@@ -29,6 +29,13 @@ repositories {
     }
 }
 
+sourceSets {
+    testmod {
+        compileClasspath += main.compileClasspath
+        runtimeClasspath += main.runtimeClasspath
+    }
+}
+
 dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings loom.officialMojangMappings()
@@ -36,6 +43,8 @@ dependencies {
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
     implementation 'com.google.code.findbugs:jsr305:3.0.2'
+
+    testmodImplementation sourceSets.main.output
 }
 
 loom {
@@ -52,7 +61,7 @@ loom {
             runDir "run/testServer"
             server()
             ideConfigGenerated project.rootProject == project
-            source sourceSets.test
+            source sourceSets.testmod
         }
     }
 }

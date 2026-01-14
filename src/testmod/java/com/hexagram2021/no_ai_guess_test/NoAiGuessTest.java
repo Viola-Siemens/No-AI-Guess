@@ -1,5 +1,6 @@
-package com.hexagram2021.no_ai_guess;
+package com.hexagram2021.no_ai_guess_test;
 
+import com.hexagram2021.no_ai_guess.NoAiGuess;
 import net.fabricmc.api.DedicatedServerModInitializer;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
 
