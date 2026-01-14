@@ -43,7 +43,7 @@ jobs:
         run: mkdir -p ./run/testServer && echo "eula=true" > ./run/testServer/eula.txt
       - name: Run Game Test
         timeout-minutes: 5
-        run: ./gradlew runAutoTestServer
+        run: ./gradlew runTestmodServer
       - name: Build with Gradle
         run: ./gradlew build
       - name: Upload binaries to release

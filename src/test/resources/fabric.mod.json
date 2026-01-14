@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "id": "no_ai_guess-testmod",
+  "name": "No AI Guess Test Mod",
+  "version": "1.0.0",
+  "environment": "*",
+  "license": "LGPL v2.1",
+  "entrypoints": {
+    "server": [
+      "com.hexagram2021.no_ai_guess.NoAiGuessTest"
+    ]
+  }
+}
