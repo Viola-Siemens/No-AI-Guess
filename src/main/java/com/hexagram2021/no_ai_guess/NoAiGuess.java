@@ -1,5 +1,6 @@
 package com.hexagram2021.no_ai_guess;
 
+import net.neoforged.fml.CrashReportCallables;
 import net.neoforged.fml.common.Mod;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -20,6 +21,15 @@ public class NoAiGuess {
 		}
 		String guidance = builder.toString();
 		LOGGER.info(guidance);
+
+		CrashReportCallables.registerHeader(() -> {
+			StringBuilder headerBuilder = new StringBuilder();
+			for (String line : GUIDANCE_LINES) {
+				headerBuilder.append("// ").append(line);
+			}
+			headerBuilder.append("// -------\n");
+			return headerBuilder.toString();
+		});
 	}
 
 	static {
